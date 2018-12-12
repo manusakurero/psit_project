@@ -1,5 +1,6 @@
 """Year analyze"""
 from data_2018 import table2018
+import matplotlib.pyplot as plt
 def year_analyze():
     """Sort by year with the most boardgame making"""
     table_2018 = table2018()
@@ -14,8 +15,20 @@ def year_analyze():
     #นับปีว่าปีนี้เกิด broadgame จำนวนเท่าไร
     #how many broadgame make in this year?
     years_bg = [[i, years.count(i)] for i in set_years]
-    print(years_bg[::])
-    #print(*year_sorted, sep=" ")
-    #print(gb)
-    #print(list(gb))
-year_analyze()
+    return years_bg[::]
+
+def plot_years():
+    """
+    plot graph by year_bg
+    1987-2017; 30 years
+    """
+    year_ana = year_analyze()
+    year_ana.sort(key=lambda kv:int(kv[0]))
+    year_thridty = year_ana[len(year_ana)-32:len(year_ana)-1]
+    print(year_thridty)
+    label2 = [year[0] for year in year_thridty]
+    val = [year[1] for year in year_thridty]
+    plt.bar(label2, val)
+    plt.show()
+
+plot_years()
