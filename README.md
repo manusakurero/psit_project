@@ -11,6 +11,6 @@
 # Data
   ข้อมูลที่ใช้มาจากเว็บ [kaggle](https://www.kaggle.com/mrpantherson/board-game-data?fbclid=IwAR36KE-u9j5Rubjadi9P3nIOlijDjzXay4YnkZTdnXSgJJ7Zl1oG5iUC9ug) เป็นข้อมูลที่อยู่ในรูป CSV (Comma Separated Value)
 # Member
-61070231 นายสธน อยู่สถาน    github: manusakurero
-61070025 นายจิรวัฒน์ ประทุมถิ่น github: it61070025
-61070215 ศรัณญ์ญู รื่นรวย      github: SarunyuRuenruay
+* 61070231 นายสธน อยู่สถาน    github: manusakurero
+* 61070025 นายจิรวัฒน์ ประทุมถิ่น github: it61070025
+* 61070215 ศรัณญ์ญู รื่นรวย      github: SarunyuRuenruay
