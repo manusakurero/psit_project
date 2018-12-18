@@ -6,7 +6,8 @@ def own():
     table_2018 = table2018()
     owned = [int(table_2018[i][16]) for i in range(1, len(table_2018))]
     name = [table_2018[i][3] for i in range(1, len(table_2018))]
-    owned_bg = [[name[i], owned[i]] for i in range(1, len(name))]
+    genre = [table_2018[i][17] for i in range(1, len(table_2018))]
+    owned_bg = [[name[i], owned[i], genre[i]] for i in range(1, len(name))]
     return owned_bg[::]
 
 def plot_owned():
@@ -15,7 +16,8 @@ def plot_owned():
     owned.sort(key=lambda kv:int(kv[1]))
     owned.reverse()
     own_10 = owned[:10]
-    print(own_10)
+    for i in own_10:
+        print(i)
     label = [i[0] for i in own_10]
     val = [i[1] for i in own_10]
     plt.bar(label, val)
